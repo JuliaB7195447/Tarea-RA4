@@ -1,0 +1,185 @@
+/* ===========================
+      ESTILOS GENERALES
+=========================== */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1b3231;
+  background-color: #f4f4f4;
+}
+
+/* ===========================
+          CABECERA
+=========================== */
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+/* ===========================
+          NAVEGACIÓN
+=========================== */
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  background-color: #2a8573;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #27708e;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #1b3231;
+}
+
+/* ===========================
+          CONTENIDO
+=========================== */
+
+main {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+main p {
+  width: 60%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+/* ===========================
+          PIE DE PÁGINA
+=========================== */
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #2a8573;
+  color: white;
+}
+
+/* ===========================
+      ESTILOS EJERCICIO 1
+=========================== */
+
+#panelFunciones {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 700px;
+  margin: 40px auto;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Título bonito */
+#panelFunciones h3 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 1.6em;
+  text-align: center;
+  color: #1b3231;
+}
+
+/* Etiquetas alineadas */
+#panelFunciones label {
+  display: inline-block;
+  width: 150px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #1b3231;
+}
+
+/* Inputs y selects */
+#panelFunciones input,
+#panelFunciones select {
+  padding: 8px 10px;
+  width: 250px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+/* Botón principal */
+#panelFunciones button {
+  display: block;
+  padding: 10px 25px;
+  margin: 10px 0 20px 150px;
+  background-color: #0b8f78;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#panelFunciones button:hover {
+  background-color: #066d5d;
+}
+
+/* Resultado en cuadro gris */
+#panelFunciones pre {
+  background: #efefef;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  margin-top: 25px;
+  white-space: pre-wrap;
+}
+
+/* Animación suave */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ================================
+  BOTONES f(1) f(2) f(3) f(4) f(5)
+================================= */
+
+.botones {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.botones button {
+  background-color: #27708e;       /* azul bonito */
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  margin: 5px;
+  border-radius: 8px;              /* redondeado */
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.botones button:hover {
+  background-color: #1b3231;       /* azul oscuro */
+}
+
+.botones button:active {
+  transform: scale(0.96);          /* pequeño efecto al hacer click */
+}
+
